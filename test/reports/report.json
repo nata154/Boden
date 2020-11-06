@@ -1,0 +1,64 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Home page title 1",
+    "line": 1,
+    "id": "home-page-title-1",
+    "tags": [],
+    "uri": "test\\features\\page.feature",
+    "elements": [
+      {
+        "id": "home-page-title-1;page-title",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Page title",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I open \"https://www.boden.co.uk/\" url",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1558000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Page title should be \"Boden UK | Women's, Men's, Boys', Girls' & Baby Clothing and Accessories\"",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

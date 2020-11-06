@@ -1,0 +1,21 @@
+{
+  "name": "protractor-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor ././config.js",
+    "wdm update": "webdriver-manager update",
+    "wdm start": "webdriver-manager start"
+  },
+  "author": "Natallia",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.5",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^6.2.1",
+    "string-format": "^2.0.0"
+  },
+  "devDependencies": {}
+}
