@@ -13,9 +13,10 @@ exports.config = {
         require: [path.resolve('./test/step_definitions/**/*.js')],
         ignoreUncaughtExceptions: true,
         format: ['json:./test/reports/report.json'],
-        tags:  '@all' ,
+        tags:  '@basket' ,
     },
     onPrepare: () => {
+        browser.manage().window().maximize();
         return browser.waitForAngularEnabled(false);
     },
 };

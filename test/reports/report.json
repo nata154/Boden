@@ -1,49 +1,132 @@
 [
   {
     "keyword": "Feature",
-    "name": "Home page title 1",
-    "line": 1,
-    "id": "home-page-title-1",
-    "tags": [],
-    "uri": "test\\features\\page.feature",
+    "name": "Add item to basket",
+    "line": 2,
+    "id": "add-item-to-basket",
+    "tags": [
+      {
+        "name": "@basket",
+        "line": 1
+      }
+    ],
+    "uri": "test\\features\\addToBasket.feature",
     "elements": [
       {
-        "id": "home-page-title-1;page-title",
+        "id": "add-item-to-basket;login-system",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Page title",
+        "line": 16,
+        "name": "Login system",
         "tags": [
           {
-            "name": "@all",
-            "line": 3
+            "name": "@basket",
+            "line": 1
           }
         ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Given ",
             "line": 5,
             "name": "I open \"https://www.boden.co.uk/\" url",
             "match": {
-              "location": "test\\step_definitions\\browser_steps.js:4"
+              "location": "test\\step_definitions\\browser_steps.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1558000000
+              "duration": 1327000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login system with login \"nata154@list.ru\" and password \"qzwxec\"",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4603000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click search button",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter item for search \"Knitwear\"",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 806000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I add to my bag first item",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9009000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click basket button",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1451000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "Page title should be \"Boden UK | Women's, Men's, Boys', Girls' & Baby Clothing and Accessories\"",
+            "line": 11,
+            "name": "I expect name of item equals to chosen",
             "match": {
-              "location": "test\\step_definitions\\browser_steps.js:8"
+              "location": "test\\step_definitions\\browser_steps.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 220000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I remove chosen item from bag",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 380000000
             }
           },
           {
